@@ -39,17 +39,17 @@ public class QuickSort {
             }
 
             if (left < right) {
-                trocar(array, right, left);
+                change(array, right, left);
                 left++;
                 right--;
             }
         }
 
-        trocar(array, start, right);
+        change(array, start, right);
         return right;
     }
 
-    private void trocar(int[] array, int i, int j) {
+    private void change(int[] array, int i, int j) {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
